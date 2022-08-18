@@ -3,12 +3,12 @@ import 'firebase/firestore'
 
 // firebase init goes here
 const config = {
-  apiKey: process.env.apiKey || 'AIzaSyD0W_Tf9zeowsmwGh2Y_1IFizoShVIeTL8',
-  authDomain: process.env.authDomain ||  'prueba-ae108.firebaseapp.com',
-  databaseURL: process.env.databaseURL ||  'prueba-154d8-default-rtb.firebaseio.com',
-  projectId: process.env.projectId ||  'prueba-ae108',
-  storageBucket: process.env.storageBucket  ||  'prueba-ae108.appspot.com',
-  messagingSenderId: process.env.messagingSenderId ||  'G-XBDJEDJ6M2'
+  apiKey: process.env.apiKey || 'AIzaSyATMZDbkZzt8fGlhEsYi576Yy-ugXbBC2A',
+  authDomain: process.env.authDomain || 'post-36bea.firebaseapp.com',
+  databaseURL: process.env.databaseURL || 'post-36bea',
+  projectId: process.env.projectId ||  'post-36bea',
+  storageBucket: process.env.storageBucket || 'post-36bea.appspot.com',
+  messagingSenderId: process.env.messagingSenderId || '120758443240'
 }
 
 firebase.initializeApp(config)
@@ -19,10 +19,10 @@ const auth = firebase.auth()
 const currentUser = auth.currentUser
 
 // date issue fix according to firebase
-const settings = {
-  timestampsInSnapshots: true
-}
-db.settings(settings)
+// const settings = {
+//   timestampsInSnapshots: true
+// }
+// db.settings(settings)
 
 // firebase collections
 const usersCollection = db.collection('users')
@@ -39,3 +39,55 @@ export {
   commentsCollection,
   likesCollection
 }
+
+
+
+
+
+// import {initializeApp} from 'firebase/app';
+// import {getAuth} from 'firebase/auth';
+// import {initializeFirestore} from 'firebase/firestore';
+
+// const firebaseConfig = {
+//   apiKey: process.env.apiKey || 'AIzaSyATMZDbkZzt8fGlhEsYi576Yy-ugXbBC2A',
+//   authDomain: process.env.authDomain || 'post-36bea.firebaseapp.com',
+//   databaseURL: process.env.databaseURL || 'https://post-36bea-default-rtdb.firebaseio.com',
+//   projectId: process.env.projectId ||  'post-36bea',
+//   storageBucket: process.env.storageBucket || 'post-36bea.appspot.com',
+//   messagingSenderId: process.env.messagingSenderId || '120758443240'
+// };
+
+// // Initialize Firebase
+// const app = initializeApp(firebaseConfig);
+// const auth = getAuth(app);
+// const db = initializeFirestore(app, {
+//   experimentalForceLongPolling: true,
+// });
+
+// export {
+//   db,
+//   auth,
+//   currentUser,
+//   usersCollection,
+//   postsCollection,
+//   commentsCollection,
+//   likesCollection
+// }
+
+
+
+// import { initializeApp } from 'firebase/app';
+// import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
+
+// // firebase init goes here
+// const config = {
+//   apiKey: process.env.apiKey || 'AIzaSyATMZDbkZzt8fGlhEsYi576Yy-ugXbBC2A',
+//   authDomain: process.env.authDomain || 'post-36bea.firebaseapp.com',
+//   databaseURL: process.env.databaseURL || 'https://post-36bea-default-rtdb.firebaseio.com',
+//   projectId: process.env.projectId ||  'post-36bea',
+//   storageBucket: process.env.storageBucket || 'post-36bea.appspot.com',
+//   messagingSenderId: process.env.messagingSenderId || '120758443240'
+// }
+
+// const app = initializeApp(firebaseConfig);
+// const db = getFirestore(app);
