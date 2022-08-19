@@ -3,12 +3,12 @@ import 'firebase/firestore'
 
 // firebase init goes here
 const config = {
-  apiKey: process.env.apiKey || 'AIzaSyATMZDbkZzt8fGlhEsYi576Yy-ugXbBC2A',
-  authDomain: process.env.authDomain || 'post-36bea.firebaseapp.com',
-  databaseURL: process.env.databaseURL || 'post-36bea',
-  projectId: process.env.projectId ||  'post-36bea',
-  storageBucket: process.env.storageBucket || 'post-36bea.appspot.com',
-  messagingSenderId: process.env.messagingSenderId || '120758443240'
+  apiKey: process.env.apiKey || 'AIzaSyBjFRJHRxU_6YFoX2F15XLAzCByomTN3XE',
+  authDomain: process.env.authDomain || 'prueba2-5e5bd.firebaseapp.com',
+  databaseURL: process.env.databaseURL || 'prueba2-5e5bd',
+  projectId: process.env.projectId ||  'prueba2-5e5bd',
+  storageBucket: process.env.storageBucket || 'prueba2-5e5bd.appspot.com',
+  messagingSenderId: process.env.messagingSenderId || '497666223373'
 }
 
 firebase.initializeApp(config)
