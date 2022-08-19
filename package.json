@@ -9,7 +9,8 @@
     "lint": "standard",
     "lint-fix": "standard --fix",
     "start": "npm run dev",
-    "build": "cross-env NODE_ENV=production node build/build.js"
+    "build": "cross-env NODE_ENV=production node build/build.js",
+    "cypress-open": "cypress open"
   },
   "dependencies": {
     "firebase": "^7.21.1-eap-auth-emulator.df41ee388",
